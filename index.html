@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amor Vitae · Traslado de muestras biológicas, insumos y documentos</title>
+  <meta name="description" content="Traslado de muestras biológicas, insumos y documentos para laboratorios clínicos en Bogotá y Cartagena. Cotice su traslado.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/icono.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="aviso-prototipo">Prototipo (fase 1). Las cotizaciones y las solicitudes sí llegan a los canales reales.</div>
+  <div class="trazo" aria-hidden="true"></div>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="marca" href="#inicio" aria-label="Inicio"><img src="assets/logo.png" alt="Amor Vitae, mensajería en salud"></a>
+      <nav class="nav">
+        <a class="ocultable" href="#servicio">Servicio</a>
+        <a class="ocultable" href="#como-funciona">Cómo funciona</a>
+        <a class="boton boton-primario boton-pequeno" href="#cotizar">Cotizar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="portada" id="cotizar">
+      <div class="contenedor">
+        <div>
+          <div class="etiqueta">Bogotá y Cartagena</div>
+          <h1>Su muestra, en buenas manos</h1>
+          <p class="lead">Trasladamos muestras biológicas, insumos y documentos entre clínicas, laboratorios y sedes. Cada solicitud queda registrada, desde la recogida hasta la entrega.</p>
+          <div class="pilares" style="margin-top:24px">
+            <div class="pilar"><div class="icono"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></div><div><h3>Traslado cuidadoso</h3><p>Muestras biológicas, insumos y documentos, con el embalaje que exige cada envío.</p></div></div>
+            <div class="pilar"><div class="icono"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5h11l5 5v9z"/><path d="M8 13h8M8 16h5"/></svg></div><div><h3>Cada solicitud registrada</h3><p>Trazabilidad desde la solicitud hasta la entrega.</p></div></div>
+            <div class="pilar"><div class="icono"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg></div><div><h3>Operadores preparados</h3><p>Personal formado para manipular material biológico.</p></div></div>
+          </div>
+        </div>
+
+        <div class="cotizador">
+          <h2>Cotice su traslado</h2>
+          <form id="form-cotizacion" novalidate>
+            <div class="campo"><label for="c-empresa">Clínica, laboratorio o empresa *</label><input id="c-empresa" name="empresa" required autocomplete="organization"></div>
+            <div class="dos">
+              <div class="campo"><label for="c-contacto">Persona de contacto *</label><input id="c-contacto" name="contacto" required autocomplete="name"></div>
+              <div class="campo"><label for="c-telefono">Teléfono *</label><input id="c-telefono" name="telefono" required inputmode="tel" autocomplete="tel"></div>
+            </div>
+            <div class="dos">
+              <div class="campo"><label for="c-correo">Correo</label><input id="c-correo" name="correo" type="email" autocomplete="email"></div>
+              <div class="campo"><label for="c-ciudad">Ciudad *</label><select id="c-ciudad" name="ciudad" required></select></div>
+            </div>
+            <div class="ruta">
+              <div class="campo"><label for="c-origen">Origen (dirección o barrio) *</label><input id="c-origen" name="origen" required placeholder="Dónde recogemos"></div>
+              <div class="campo"><label for="c-destino">Destino (dirección o barrio) *</label><input id="c-destino" name="destino" required placeholder="Dónde entregamos"></div>
+            </div>
+            <div class="campo"><label>¿Qué trasladamos? *</label>
+              <div class="opciones" id="tipos">
+                <label><input type="checkbox" name="tipo" value="Muestras biológicas"> Muestras biológicas</label>
+                <label><input type="checkbox" name="tipo" value="Insumos"> Insumos</label>
+                <label><input type="checkbox" name="tipo" value="Documentos"> Documentos</label>
+              </div>
+            </div>
+            <div class="dos">
+              <div class="campo"><label for="c-frecuencia">Frecuencia *</label>
+                <select id="c-frecuencia" name="frecuencia" required>
+                  <option value="">Seleccione…</option>
+                  <option>Una sola vez</option>
+                  <option>Diaria</option>
+                  <option>Varias veces por semana</option>
+                  <option>Semanal</option>
+                  <option>Mensual</option>
+                  <option>Según demanda</option>
+                </select>
+              </div>
+              <div class="campo"><label for="c-volumen">Envíos al mes (aprox.)</label><input id="c-volumen" name="volumen" inputmode="numeric" placeholder="Por ejemplo, 20"></div>
+            </div>
+            <div class="campo"><label for="c-notas">Condiciones del envío</label><textarea id="c-notas" name="notas" rows="2" placeholder="Horario de recogida, temperatura requerida, tipo de muestra…"></textarea></div>
+            <label class="autorizacion"><input type="checkbox" name="autoriza" required> <span>Autorizo a STEMP a tratar mis datos para responder esta cotización, según la <a href="politica-datos.html" target="_blank">política de tratamiento de datos</a>.</span></label>
+            <div class="error" id="error-cotizacion" role="alert"></div>
+            <div class="acciones" style="margin-top:6px">
+              <button class="boton boton-whatsapp" type="button" data-enviar="whatsapp">Enviar por WhatsApp</button>
+              <button class="boton boton-secundario" type="button" data-enviar="correo">Enviar por correo</button>
+            </div>
+            <p class="nota" style="margin-top:10px">Este sitio no guarda sus datos: la cotización sale redactada en su WhatsApp o en su correo, y usted decide si la envía.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicio">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <div class="etiqueta">Servicio</div>
+          <h2>Qué trasladamos</h2>
+        </div>
+        <div class="equipos">
+          <article class="tarjeta"><div class="linea">Muestras biológicas</div><h3>De la clínica al laboratorio</h3><p>Recogemos la muestra donde se tomó y la entregamos en el laboratorio que usted indique.</p></article>
+          <article class="tarjeta"><div class="linea">Insumos</div><h3>Entre sedes y proveedores</h3><p>Reactivos, tubos y material de laboratorio, donde los necesite.</p></article>
+          <article class="tarjeta"><div class="linea">Documentos</div><h3>Órdenes, resultados y facturas</h3><p>Documentos del laboratorio, con entrega confirmada.</p></article>
+        </div>
+        <div class="solicitar">
+          <div><h3 style="margin:0 0 4px">¿Ya es cliente?</h3><p>Solicite su traslado por el chatbot de WhatsApp de la Plataforma STEMP: <strong id="chatbot-visible">317 579 8485</strong>.</p></div>
+          <a class="boton boton-whatsapp" id="boton-chatbot" href="#" target="_blank" rel="noopener">Solicitar un traslado</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="seccion-gris">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <div class="etiqueta">Cómo funciona</div>
+          <h2>Del pedido a la entrega</h2>
+        </div>
+        <div class="pasos">
+          <div class="paso"><h3>Cotice</h3><p>Cuéntenos origen, destino, qué trasladamos y con qué frecuencia.</p></div>
+          <div class="paso"><h3>Acordamos</h3><p>Le respondemos con la tarifa y las condiciones del servicio.</p></div>
+          <div class="paso"><h3>Solicite</h3><p>Cada traslado se pide por el chatbot de WhatsApp y queda registrado.</p></div>
+          <div class="paso"><h3>Entregamos</h3><p>Un Operador recoge y entrega, y le confirmamos la entrega.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div>
+        <img src="assets/logo-negativo.png" alt="Amor Vitae" style="height:44px">
+        <p>Amor Vitae es una marca de <span data-sitio="responsable">Soluciones y Tecnologías Empresariales SAS</span> (STEMP), NIT <span data-sitio="nit">900.308.305-2</span>.</p>
+        <p class="nota" style="color:inherit">Prototipo de la fase 1, octubre de 2026.</p>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li>Cotizaciones: <a id="pie-whatsapp" href="#" target="_blank" rel="noopener">317 517 4344</a></li>
+          <li>Solicitudes: <a id="pie-chatbot" href="#" target="_blank" rel="noopener">317 579 8485</a></li>
+          <li>Correo: <a id="pie-correo" href="#">contacto@stemp.company</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Información</h3>
+        <ul>
+          <li><a href="politica-datos.html">Política de tratamiento de datos</a></li>
+          <li><a id="pie-grupo" href="#"><span data-sitio="respaldo">Parte de Team 3</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
