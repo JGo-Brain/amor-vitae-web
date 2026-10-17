@@ -190,3 +190,17 @@ section[id] { scroll-margin-top: 80px; }
 .solicitar { display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; background: var(--superficie); border-radius: 14px; padding: 20px 24px; margin-top: 28px; }
 .solicitar p { margin: 0; color: var(--tinta-suave); }
 @media (max-width: 520px) { .ruta { grid-template-columns: 1fr; } }
+
+/* Amarillo: color de identidad de Amor Vitae (decisión de JGo, 17-oct-2026). Sobre amarillo, texto negro */
+:root { --amarillo: #FFD400; --amarillo-oscuro: #F0C400; --amarillo-suave: #FFF6CC; }
+.boton-primario { background: var(--amarillo); color: #000; }
+.boton-primario:hover { background: var(--amarillo-oscuro); }
+.nav a.boton-primario, .nav a.boton-primario:hover { color: #000; }
+.pilar .icono { background: var(--amarillo-suave); color: #000; }
+.paso::before { background: var(--amarillo); color: #000; }
+.cotizador { border-top: 6px solid var(--amarillo); }
+.tarjeta { border-top: 4px solid var(--amarillo); }
+.etiqueta { color: #000; }
+.etiqueta::before { content: ""; display: inline-block; width: 22px; height: 4px; background: var(--amarillo); vertical-align: middle; margin-right: 8px; }
+.portada::after { border-color: var(--amarillo); opacity: .35; }
+.aviso-prototipo { background: var(--amarillo); color: #000; }

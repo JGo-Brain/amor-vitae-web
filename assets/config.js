@@ -9,8 +9,9 @@ window.SITIO = {
   whatsapp: "573175174344",
   whatsappVisible: "317 517 4344",
   correo: "contacto@stemp.company",
+  notificaciones: "notificacionesjudiciales@stemp.company",
   // Solicitudes de traslado: chatbot de la Plataforma STEMP (solo recibe requerimientos)
   chatbot: "573175798485",
   chatbotVisible: "317 579 8485",
-  ciudades: ["Bogotá", "Cartagena"]
+  ciudades: ["Bogotá", "Cartagena"]          // sugerencias; el campo acepta cualquier ciudad
 };

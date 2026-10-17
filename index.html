@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amor Vitae · Traslado de muestras biológicas, insumos y documentos</title>
-  <meta name="description" content="Traslado de muestras biológicas, insumos y documentos para laboratorios clínicos en Bogotá y Cartagena. Cotice su traslado.">
+  <meta name="description" content="Traslado de muestras biológicas, insumos y documentos para laboratorios clínicos. Cotice su traslado.">
   <meta name="robots" content="noindex">
   <link rel="icon" href="assets/icono.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
     <section class="portada" id="cotizar">
       <div class="contenedor">
         <div>
-          <div class="etiqueta">Bogotá y Cartagena</div>
+          <div class="etiqueta">Mensajería en salud</div>
           <h1>Su muestra, en buenas manos</h1>
           <p class="lead">Trasladamos muestras biológicas, insumos y documentos entre clínicas, laboratorios y sedes. Cada solicitud queda registrada, desde la recogida hasta la entrega.</p>
           <div class="pilares" style="margin-top:24px">
@@ -51,7 +51,7 @@
             </div>
             <div class="dos">
               <div class="campo"><label for="c-correo">Correo</label><input id="c-correo" name="correo" type="email" autocomplete="email"></div>
-              <div class="campo"><label for="c-ciudad">Ciudad *</label><select id="c-ciudad" name="ciudad" required></select></div>
+              <div class="campo"><label for="c-ciudad">Ciudad *</label><input id="c-ciudad" name="ciudad" required list="ciudades" autocomplete="address-level2" placeholder="Ciudad o municipio"><datalist id="ciudades"></datalist></div>
             </div>
             <div class="ruta">
               <div class="campo"><label for="c-origen">Origen (dirección o barrio) *</label><input id="c-origen" name="origen" required placeholder="Dónde recogemos"></div>
@@ -79,7 +79,7 @@
               <div class="campo"><label for="c-volumen">Envíos al mes (aprox.)</label><input id="c-volumen" name="volumen" inputmode="numeric" placeholder="Por ejemplo, 20"></div>
             </div>
             <div class="campo"><label for="c-notas">Condiciones del envío</label><textarea id="c-notas" name="notas" rows="2" placeholder="Horario de recogida, temperatura requerida, tipo de muestra…"></textarea></div>
-            <label class="autorizacion"><input type="checkbox" name="autoriza" required> <span>Autorizo a STEMP a tratar mis datos para responder esta cotización, según la <a href="politica-datos.html" target="_blank">política de tratamiento de datos</a>.</span></label>
+            <label class="autorizacion"><input type="checkbox" name="autoriza" required> <span>Autorizo el tratamiento de mis datos para responder esta cotización, según la <a href="politica-datos.html" target="_blank">política de tratamiento de datos</a>.</span></label>
             <div class="error" id="error-cotizacion" role="alert"></div>
             <div class="acciones" style="margin-top:6px">
               <button class="boton boton-whatsapp" type="button" data-enviar="whatsapp">Enviar por WhatsApp</button>
@@ -129,7 +129,7 @@
     <div class="contenedor">
       <div>
         <img src="assets/logo-negativo.png" alt="Amor Vitae" style="height:44px">
-        <p>Amor Vitae es una marca de <span data-sitio="responsable">Soluciones y Tecnologías Empresariales SAS</span> (STEMP), NIT <span data-sitio="nit">900.308.305-2</span>.</p>
+        <p>Amor Vitae es una marca de <span data-sitio="responsable">Soluciones y Tecnologías Empresariales SAS</span>, NIT <span data-sitio="nit">900.308.305-2</span>.</p>
         <p class="nota" style="color:inherit">Prototipo de la fase 1, octubre de 2026.</p>
       </div>
       <div>
@@ -138,6 +138,7 @@
           <li>Cotizaciones: <a id="pie-whatsapp" href="#" target="_blank" rel="noopener">317 517 4344</a></li>
           <li>Solicitudes: <a id="pie-chatbot" href="#" target="_blank" rel="noopener">317 579 8485</a></li>
           <li>Correo: <a id="pie-correo" href="#">contacto@stemp.company</a></li>
+          <li>Notificaciones judiciales: <a href="mailto:notificacionesjudiciales@stemp.company">notificacionesjudiciales@stemp.company</a></li>
         </ul>
       </div>
       <div>

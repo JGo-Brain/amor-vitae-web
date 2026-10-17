@@ -14,7 +14,7 @@
   $("#boton-chatbot").href = bot + "?text=" + encodeURIComponent("Hola, quiero solicitar un traslado de Amor Vitae.");
   $("#pie-correo").href = "mailto:" + S.correo; $("#pie-correo").textContent = S.correo;
   if ($("#pie-grupo")) $("#pie-grupo").href = S.sitioGrupo;
-  $("#c-ciudad").innerHTML = '<option value="">Seleccione…</option>' + S.ciudades.map(c => `<option>${c}</option>`).join("");
+  $("#ciudades").innerHTML = S.ciudades.map(c => `<option value="${c}">`).join("");
 
   const f = $("#form-cotizacion"), err = $("#error-cotizacion");
   const v = n => (f.elements[n].value || "").trim();
@@ -43,7 +43,7 @@
       "Contacto: " + v("contacto"),
       "Teléfono: " + v("telefono"),
       v("correo") ? "Correo: " + v("correo") : "", "",
-      "Autorizo el tratamiento de mis datos según la política de STEMP."
+      "Autorizo el tratamiento de mis datos según la política de tratamiento de datos de " + S.nombre + "."
     ].filter((l, i, a) => l !== "" || a[i - 1] !== "").join("\n");
     if (b.dataset.enviar === "whatsapp") window.open(wa + "?text=" + encodeURIComponent(texto), "_blank", "noopener");
     else window.location.href = "mailto:" + S.correo + "?subject=" + encodeURIComponent("Cotización de traslado · " + v("empresa")) + "&body=" + encodeURIComponent(texto);
