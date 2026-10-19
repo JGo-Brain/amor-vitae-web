@@ -204,3 +204,32 @@ section[id] { scroll-margin-top: 80px; }
 .etiqueta::before { content: ""; display: inline-block; width: 22px; height: 4px; background: var(--amarillo); vertical-align: middle; margin-right: 8px; }
 .portada::after { border-color: var(--amarillo); opacity: .35; }
 .aviso-prototipo { background: var(--amarillo); color: #000; }
+
+/* ===== Pase visual (18-oct-2026): foto a sangre, cotizador encima, tarjetas con imagen ===== */
+body { font-size: 17px; }
+.hero { position: relative; padding: 84px 0 88px; background: #0A093A center / cover no-repeat; color: #fff; }
+.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, rgba(10, 9, 58, .94) 0%, rgba(10, 9, 58, .78) 50%, rgba(10, 9, 58, .45) 100%); }
+.hero::after { display: none; }
+.hero .contenedor { position: relative; z-index: 1; align-items: center; }
+.hero h1 { color: #fff; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 800; letter-spacing: -.02em; }
+.hero p.lead { color: #D5D5EA; }
+.hero .etiqueta { color: #fff; }
+.hero .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.hero .chip { padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.25); font-size: .85rem; }
+.hero .chip::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--amarillo); margin-right: 8px; }
+.cotizador { border-radius: 20px; box-shadow: 0 30px 70px rgba(0, 0, 0, .35); }
+.franja-pilares { padding: 56px 0 0; }
+.franja-pilares .pilares { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.franja-pilares .pilar { border: 0; background: var(--superficie); border-radius: 16px; padding: 22px; }
+section { padding: 80px 0; }
+.encabezado-seccion h2 { font-size: clamp(1.8rem, 3.3vw, 2.5rem); letter-spacing: -.015em; }
+#servicio .tarjeta { padding: 0; overflow: hidden; border: 0; border-radius: 18px; box-shadow: 0 1px 2px rgba(10,9,58,.06), 0 12px 30px rgba(10,9,58,.08); transition: transform .25s ease, box-shadow .25s ease; }
+#servicio .tarjeta:hover { transform: translateY(-4px); box-shadow: 0 20px 44px rgba(10,9,58,.14); }
+.foto-servicio { aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 5px solid var(--amarillo); }
+.foto-servicio img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+#servicio .tarjeta:hover .foto-servicio img { transform: scale(1.04); }
+#servicio .tarjeta .cuerpo { padding: 20px 22px 24px; display: grid; gap: 8px; }
+.js .revelar { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+.js .revelar.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .js .revelar { opacity: 1; transform: none; transition: none; } }
+@media (max-width: 860px) { .hero::before { background: linear-gradient(180deg, rgba(10,9,58,.72), rgba(10,9,58,.92) 60%); } .franja-pilares .pilares { grid-template-columns: 1fr; } section { padding: 60px 0; } }

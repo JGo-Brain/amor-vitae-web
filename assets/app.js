@@ -48,4 +48,8 @@
     if (b.dataset.enviar === "whatsapp") window.open(wa + "?text=" + encodeURIComponent(texto), "_blank", "noopener");
     else window.location.href = "mailto:" + S.correo + "?subject=" + encodeURIComponent("Cotización de traslado · " + v("empresa")) + "&body=" + encodeURIComponent(texto);
   }));
+
+  // Aparición suave al desplazarse
+  const obs = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); obs.unobserve(e.target); } }), { threshold: .12 }) : null;
+  $$(".revelar").forEach(el => obs ? obs.observe(el) : el.classList.add("visible"));
 })();

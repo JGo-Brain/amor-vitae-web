@@ -9,6 +9,9 @@ Página de Amor Vitae con el formulario de cotización (origen, destino, qué se
 - Canales propios de Amor Vitae: por definir (hoy, los de STEMP).
 - Sin ® en el logo: no hay certificado de registro de la marca.
 
+## Fotos
+De Pexels (licencia de Pexels: uso comercial gratis, sin atribución obligatoria), optimizadas en `assets/img/`. Número de cada foto en pexels.com: mensajero-moto (13311393), tubos-gradilla (11181872), tubos-tapa-azul (3908182), mensajero-paquete (6867969). Sin logos de fabricantes ni datos de pacientes.
+
 ## Reglas de escisión
 1. Sitio, repositorio y dominio propios; sin código compartido con los otros sitios (si se parecen, es por copia).
 2. Canales propios para pedidos y cotizaciones, en la configuración del sitio.
