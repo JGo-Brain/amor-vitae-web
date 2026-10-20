@@ -8,6 +8,7 @@ Página de Amor Vitae con el formulario de cotización (origen, destino, qué se
 ## Pendientes
 - Canales propios de Amor Vitae: por definir (hoy, los de STEMP).
 - Sin ® en el logo: no hay certificado de registro de la marca.
+- Identidad v0.2 (19-oct-2026): la N en azul oscuro, azul claro y rojo; botones en azul STEMP; sin amarillo. Logos SVG del kit `· STE/STE Mkdo/STE Marcas/AV/Brand Kit v0.1`.
 
 ## Fotos
 De Pexels (licencia de Pexels: uso comercial gratis, sin atribución obligatoria), optimizadas en `assets/img/`. Número de cada foto en pexels.com: mensajero-moto (13311393), tubos-gradilla (11181872), tubos-tapa-azul (3908182), mensajero-paquete (6867969). Sin logos de fabricantes ni datos de pacientes.
@@ -17,7 +18,7 @@ De Pexels (licencia de Pexels: uso comercial gratis, sin atribución obligatoria
 2. Canales propios para pedidos y cotizaciones, en la configuración del sitio.
 3. Política de tratamiento de datos y casilla de autorización propias (Ley 1581 de 2012). Hoy el responsable es STEMP.
 4. Pagos y factura electrónica (fase 2) a nombre de quien vende.
-5. Marca propia; «Parte de Team 3» es un respaldo que se quita dejando vacío un dato de la configuración.
+5. Marca propia; «Parte de Teamtres» es un respaldo que se quita dejando vacío un dato de la configuración.
 6. Plataformas compartidas (Plataforma STEMP, Resultados Lab), enlazadas desde la configuración.
 
 ## Cómo se publica

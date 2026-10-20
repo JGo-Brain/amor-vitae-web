@@ -1,7 +1,7 @@
 // Configuración de Amor Vitae. Regla de escisión: canales, respaldo y plataforma viven aquí y solo aquí.
 window.SITIO = {
   nombre: "Amor Vitae",
-  respaldo: "Parte de Team 3",                 // dejar "" para quitar el respaldo del grupo
+  respaldo: "Parte de Teamtres",                 // dejar "" para quitar el respaldo del grupo
   sitioGrupo: "https://jgo-brain.github.io/team3-web/",
   responsable: "Soluciones y Tecnologías Empresariales SAS",
   nit: "900.308.305-2",

@@ -1,16 +1,16 @@
-/* Amor Vitae · colores del Brand Kit v0.1. El degradado es del símbolo: no se usa como fondo de texto */
+/* Amor Vitae · Brand Kit v0.2 (19-oct-2026): N en azul oscuro, azul claro y rojo; botones en azul STEMP; sin amarillo */
 :root {
-  --azul-profundo: #0A093A;
-  --azul-stemp: #005B97;
-  --azul-claro: #00E0F4;
+  --azul-profundo: #203951;
+  --azul-stemp: #366092;
+  --azul-claro: #9DDCF9;
   --blanco: #FFFFFF;
-  --tinta: #000000;
-  --tinta-suave: #4A4F5C;
-  --tinta-tenue: #5E6370;
-  --superficie: #F5F6FA;
-  --borde: #E3E5EE;
-  --oscuro-superficie: #17165A;
-  --oscuro-texto-suave: #D5D5EA;
+  --tinta: #1B2633;
+  --tinta-suave: #4A5868;
+  --tinta-tenue: #5C6979;
+  --superficie: #F2F6FA;
+  --borde: #DCE4EC;
+  --oscuro-superficie: #2A4763;
+  --oscuro-texto-suave: #C9D6E3;
   --whatsapp: #1A7F4B;
   --radio: 10px;
   --ancho: 1160px;
@@ -118,7 +118,7 @@ section { padding: 64px 0; }
 .banda h2 { color: #fff; }
 .banda p { color: var(--oscuro-texto-suave); }
 .banda .contenedor { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
-.pie { background: #07062b; color: var(--oscuro-texto-suave); font-size: .85rem; padding: 36px 0; }
+.pie { background: #17293b; color: var(--oscuro-texto-suave); font-size: .85rem; padding: 36px 0; }
 .pie .contenedor { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 24px; }
 .pie a { color: #fff; }
 .pie img { height: 34px; width: auto; margin-bottom: 10px; }
@@ -191,45 +191,40 @@ section[id] { scroll-margin-top: 80px; }
 .solicitar p { margin: 0; color: var(--tinta-suave); }
 @media (max-width: 520px) { .ruta { grid-template-columns: 1fr; } }
 
-/* Amarillo: color de identidad de Amor Vitae (decisión de JGo, 17-oct-2026). Sobre amarillo, texto negro */
-:root { --amarillo: #FFD400; --amarillo-oscuro: #F0C400; --amarillo-suave: #FFF6CC; }
-.boton-primario { background: var(--amarillo); color: #000; }
-.boton-primario:hover { background: var(--amarillo-oscuro); }
-.nav a.boton-primario, .nav a.boton-primario:hover { color: #000; }
-.pilar .icono { background: var(--amarillo-suave); color: #000; }
-.paso::before { background: var(--amarillo); color: #000; }
-.cotizador { border-top: 6px solid var(--amarillo); }
-.tarjeta { border-top: 4px solid var(--amarillo); }
-.etiqueta { color: #000; }
-.etiqueta::before { content: ""; display: inline-block; width: 22px; height: 4px; background: var(--amarillo); vertical-align: middle; margin-right: 8px; }
-.portada::after { border-color: var(--amarillo); opacity: .35; }
-.aviso-prototipo { background: var(--amarillo); color: #000; }
+/* Franjas de la N (v0.2): azul oscuro, azul claro y rojo; en fondos oscuros, blanco, azul claro y rojo aclarado */
+:root { --franjas: linear-gradient(90deg, #203951 0 33.34%, #9DDCF9 33.34% 66.67%, #FF0000 66.67%); --franjas-oscuro: linear-gradient(90deg, #FFFFFF 0 33.34%, #9DDCF9 33.34% 66.67%, #FF6B6B 66.67%); }
+.trazo { background: var(--franjas); }
+.etiqueta::before { content: ""; display: inline-block; width: 30px; height: 4px; background: var(--franjas); vertical-align: middle; margin-right: 8px; }
+.cotizador { position: relative; overflow: hidden; }
+.cotizador::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: var(--franjas); }
 
 /* ===== Pase visual (18-oct-2026): foto a sangre, cotizador encima, tarjetas con imagen ===== */
 body { font-size: 17px; }
-.hero { position: relative; padding: 84px 0 88px; background: #0A093A center / cover no-repeat; color: #fff; }
-.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, rgba(10, 9, 58, .94) 0%, rgba(10, 9, 58, .78) 50%, rgba(10, 9, 58, .45) 100%); }
+.hero { position: relative; padding: 84px 0 88px; background: #203951 center / cover no-repeat; color: #fff; }
+.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, rgba(16, 32, 48, .94) 0%, rgba(32, 57, 81, .8) 50%, rgba(32, 57, 81, .42) 100%); }
 .hero::after { display: none; }
 .hero .contenedor { position: relative; z-index: 1; align-items: center; }
 .hero h1 { color: #fff; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 800; letter-spacing: -.02em; }
-.hero p.lead { color: #D5D5EA; }
+.hero p.lead { color: #C9D6E3; }
+.hero .etiqueta::before { background: var(--franjas-oscuro); }
 .hero .etiqueta { color: #fff; }
 .hero .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 .hero .chip { padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.25); font-size: .85rem; }
-.hero .chip::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--amarillo); margin-right: 8px; }
+.hero .chip::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--franjas-oscuro); margin-right: 8px; }
 .cotizador { border-radius: 20px; box-shadow: 0 30px 70px rgba(0, 0, 0, .35); }
 .franja-pilares { padding: 56px 0 0; }
 .franja-pilares .pilares { grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .franja-pilares .pilar { border: 0; background: var(--superficie); border-radius: 16px; padding: 22px; }
 section { padding: 80px 0; }
 .encabezado-seccion h2 { font-size: clamp(1.8rem, 3.3vw, 2.5rem); letter-spacing: -.015em; }
-#servicio .tarjeta { padding: 0; overflow: hidden; border: 0; border-radius: 18px; box-shadow: 0 1px 2px rgba(10,9,58,.06), 0 12px 30px rgba(10,9,58,.08); transition: transform .25s ease, box-shadow .25s ease; }
-#servicio .tarjeta:hover { transform: translateY(-4px); box-shadow: 0 20px 44px rgba(10,9,58,.14); }
-.foto-servicio { aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 5px solid var(--amarillo); }
+#servicio .tarjeta { padding: 0; overflow: hidden; border: 0; border-radius: 18px; box-shadow: 0 1px 2px rgba(16,32,48,.06), 0 12px 30px rgba(16,32,48,.08); transition: transform .25s ease, box-shadow .25s ease; }
+#servicio .tarjeta:hover { transform: translateY(-4px); box-shadow: 0 20px 44px rgba(16,32,48,.14); }
+.foto-servicio { position: relative; aspect-ratio: 16 / 10; overflow: hidden; }
+.foto-servicio::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: var(--franjas); }
 .foto-servicio img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
 #servicio .tarjeta:hover .foto-servicio img { transform: scale(1.04); }
 #servicio .tarjeta .cuerpo { padding: 20px 22px 24px; display: grid; gap: 8px; }
 .js .revelar { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
 .js .revelar.visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .js .revelar { opacity: 1; transform: none; transition: none; } }
-@media (max-width: 860px) { .hero::before { background: linear-gradient(180deg, rgba(10,9,58,.72), rgba(10,9,58,.92) 60%); } .franja-pilares .pilares { grid-template-columns: 1fr; } section { padding: 60px 0; } }
+@media (max-width: 860px) { .hero::before { background: linear-gradient(180deg, rgba(16,32,48,.72), rgba(16,32,48,.92) 60%); } .franja-pilares .pilares { grid-template-columns: 1fr; } section { padding: 60px 0; } }
